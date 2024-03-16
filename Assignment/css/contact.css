@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.content::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.logo h1 {
+    padding-top: 10px;
+    padding-left: 30px;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-weight: 200;
+    z-index: 5;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    background: linear-gradient(173.1deg, rgba(226, 66, 249, 0.94) 10.2%, rgba(79, 147, 249, 1) 77.3%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 55px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-image: linear-gradient(173.1deg, rgba(226, 66, 249, 0.94) 10.2%, rgba(79, 147, 249, 1) 77.3%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    font-size: 17px;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    font-family: 'Sofia Sans Condensed';
+}
+
+.contact-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(173.1deg, rgba(226, 66, 249, 0.94) 10.2%, rgba(79, 147, 249, 1) 77.3%);
+    cursor: pointer;
+}
+
+.contact-right img {
+    width: 500px;
+    border-radius: 20px;
+}

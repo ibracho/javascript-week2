@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="logo">
+            <h1><a href="./index.html">Scuba<span>Paradise</span></a></h1>
+        </div>
+        <div class="contact-container">
+            <form onsubmit="onSubmit(event)" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in touch</h2>
+                    <hr>
+                </div>
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <input type="subject" name="Subject" placeholder="Subject" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs required"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="contact-right">
+                <img src="../images/diver.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
